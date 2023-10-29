@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- Sidebar start -->
+  <div class="app-sidebar">
+    <div class="app-sidebar-part">
+
+      <h3 class="app-sidebar-part-order app-sidebar-part-order-1 active"> 1</h3>
+      <div class="app-sidebar-part-title-container">
+        <h3 class="app-sidebar-part-sub-title">STEP 1</h3>
+      <h3 class="app-sidebar-part-title">YOUR INFO</h3>
+      </div>
+      
+    </div>
+    <div class="app-sidebar-part">
+      <h3 class="app-sidebar-part-order app-sidebar-part-order-2"> 2</h3>
+      <div class="app-sidebar-part-title-container">
+
+      <h3 class="app-sidebar-part-sub-title">STEP 2</h3>
+
+      <h3 class="app-sidebar-part-title">SELECT PLAN</h3>
+      </div> 
+    </div>
+    <div class="app-sidebar-part">
+      <h3 class="app-sidebar-part-order app-sidebar-part-order-3"> 3</h3>
+      <div class="app-sidebar-part-title-container">
+
+      <h3 class="app-sidebar-part-sub-title">STEP 3</h3>
+
+      <h3 class="app-sidebar-part-title">ADD-ONS</h3>
+      </div>
+    </div>
+    <div class="app-sidebar-part">
+      <h3 class="app-sidebar-part-order app-sidebar-part-order-4"> 4</h3>
+      <div class="app-sidebar-part-title-container">
+
+      <h3 class="app-sidebar-part-sub-title">STEP 4</h3>
+
+      <h3 class="app-sidebar-part-title">SUMMARY</h3>
+      </div>
+    </div>
+  
+  
+    <!-- Sidebar end -->
+  </div>
+  <div class="app-main step-1 hide ">
+ <!-- Step 1 start -->
+<div class="app-main-title">
+ Personal info
+
+</div>
+<div class="app-main-sub-title">
+ Please provide your name, email address, and phone number.
+
+</div>
+<div class="app-main-form">
+  <div class="form-control">
+    <label for="name">Name</label> 
+    <small></small>
+    <input type="text" id="name" name="name" placeholder="e.g. Stephen King"> 
+
+  </div>
+
+  <div class="form-control">
+    <label for="email">Email Address</label>
+    <small></small>
+    <input type="email" id="email" name="email" placeholder=" e.g. stephenking@lorem.com"> <br>    <small></small>
+
+  </div>
+  <div class="form-control">
+    <label for="phone">Phone Number</label>
+    <small></small>
+    
+    <br>
+    <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890"> <br>
+
+  </div>
+
+</div>
+
+ <button class="app-main-btn" type="submit">Next Step</button>
+
+  </div>
+  
+<!-- Step 2 start -->
+<div class="app-main step-2  ">
+ <div class="app-main-title">
+ Select your plan
+ 
+ </div>
+ <div class="app-main-sub-title">
+  You have the option of monthly or yearly billing.
+ 
+ </div>
+ <div class="app-main-plans">
+    <div class="app-main-plan" id="arcade-plan">
+      <img src="./assets/images/icon-arcade.svg" alt="">
+      <div class="app-main-plan-title">
+        Arcade
+      </div>
+      <div class="app-main-plan-price">
+        $9/mo
+      </div>
+      
+    </div>
+    <div class="app-main-plan" id="advanced-plan">
+      <img src="./assets/images/icon-advanced.svg" alt="">
+
+      <div class="app-main-plan-title">
+        Advanced
+      </div>
+      <div class="app-main-plan-price">
+        $12/mo
+      </div>
+      
+    </div>
+    <div class="app-main-plan" id="pro-plan">
+      <img src="./assets/images/icon-pro.svg" alt="">
+
+      <div class="app-main-plan-title">
+        Pro
+      </div>
+      <div class="app-main-plan-price">
+        $15/mo
+      </div>
+      
+    </div>
+ </div>
+<div class="app-main-subscribe-time">
+  <p class="app-main-subscribe-time-monthly">
+    Monthly
+  </p>
+  <div class="app-main-subscribe-time-switch">
+    <div class="app-main-subscribe-time-switch-circle"></div>
+  </div>
+  <p class="app-main-subscribe-time-yearly">
+    Yearly
+  </p>
+</div>
+<button class="app-main-btn" type="submit">Next Step</button>
+<p class="app-main-back" >Go Back</p>
+</div>
+<!-- Step 2 end -->
+  <!-- Step 3 start -->
+
+<div class="app-main step-3 hide">
+ <div class="app-main-title">
+  Pick add-ons
+ 
+ </div>
+ <div class="app-main-sub-title">
+  Add-ons help enhance your gaming experience.
+ </div>
+ <div class="app-main-services">
+  <div class="app-main-services-item">
+    <div class="app-main-services-item-checkbox">
+      <img src="./assets/images/icon-checkmark.svg" alt="">
+    </div>
+    <div class="app-main-services-item-title">
+
+      Online service
+    </div>
+    <div class="app-main-services-item-price monthly hide">
+      +$1/mo
+    </div>
+    <div class="app-main-services-item-price yearly hide">
+      +$10/yr
+    </div>
+    <div class="app-main-services-item-description">
+      Access to multiplayer games
+    </div>
+  </div>
+  <div class="app-main-services-item">
+    <div class="app-main-services-item-title">
+      Larger storage
+    </div>
+    <div class="app-main-services-item-price monthly hide">
+      +$2/mo
+    </div>
+    <div class="app-main-services-item-price yearly hide">
+      +$20/yr
+    </div>
+    <div class="app-main-services-item-description">
+      Extra 1TB of cloud save
+    </div>
+  </div>
+  </div>
+  <div class="app-main-services-item">
+    <div class="app-main-services-item-title">
+      Customizable Profile
+
+    </div>
+    <div class="app-main-services-item-price monthly hide">
+      +$2/mo
+    </div>
+    <div class="app-main-services-item-price yearly hide">
+      +$20/yr
+    </div>
+    <div class="app-main-services-item-description">
+      Custom theme on your profile
+    </div>
+  </div>
+  <button class="app-main-btn" type="submit">Next Step</button>
+  <p class="app-main-back" >Go Back</p>
+ 
+</div>
+ 
+
+
+  <!-- Step 3 end -->
+
+
+
+  <!-- Step 4 start -->
+  <div class="app-main step-4 hide">
+    <div class="app-main-title">
+      Finishing up
+    
+    </div>
+    <div class="app-main-sub-title">
+  Double-check everything looks OK before confirming.
+
+    </div>
+      
+    <button class="app-main-btn" type="submit">Next Step</button>
+     
+    
+
+  <!-- Dynamically add subscription and add-on selections here -->
+
+
+  Total (per month/year)
+
+ 
+  <button class="app-main-btn" type="submit">Next Step</button>
+  <p class="app-main-back" >Go Back</p>
+</div>
+  <!-- Step 4 end -->
+
+  <!-- Step 5 start -->
+  <div class="app-main thanks hide">
+    <img src="./assets/images/icon-thank-you.svg" alt="">
+    <div class="app-main-thanks-title">
+      Thank you!
+    </div>
+    <div class="app-main-thanks-content">
+
+      Thanks for confirming your subscription! We hope you have fun 
+      using our platform. If you ever need support, please feel free 
+      to email us at support@loremgaming.com.
+    </div>
+      
+    </div>
+  <!-- Step 5 end -->
+  
+  
+</body>
+<script src="index.js"></script>
+</html>
